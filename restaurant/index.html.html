@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover delicious meals, fresh ingredients and warm hospitality at Flavor Haven Restaurant.">
+  <title>Flavor Haven | Restaurant & Grill</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#home" class="logo">✦ Flavor <span>Haven</span>
+    <small>RESTAURANT & GRILL</small>
+  </a>
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Open menu"
+          aria-expanded="false">☰</button>
+
+  <nav id="navMenu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#menu">Our Menu</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact" class="nav-button">Contact Us</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <span class="eyebrow">GOOD FOOD • GREAT MOOD</span>
+      <h1>Delicious Food<br>For <span>Every Occasion.</span></h1>
+      <p>
+        Discover rich flavours, freshly prepared meals and a welcoming
+        atmosphere. Your next favourite meal is waiting for you.
+      </p>
+      <div class="hero-actions">
+        <a href="#menu" class="button gold-button">Explore Our Menu ↗</a>
+        <a href="#contact" class="button transparent-button">Book a Table</a>
+      </div>
+      <div class="hero-note">✦ Fresh ingredients &nbsp; ✦ Made with care</div>
+    </div>
+  </section>
+
+  <section class="about section" id="about">
+    <div class="about-image">
+      <img
+        src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=85"
+        alt="Restaurant dining area with a welcoming atmosphere"
+        loading="lazy">
+      <div class="image-label">Good food. Memorable moments.</div>
+    </div>
+
+    <div class="about-content">
+      <span class="eyebrow">OUR STORY</span>
+      <h2>Welcome to <span>Flavor Haven</span></h2>
+      <p>
+        We believe good food brings people together. Our restaurant
+        combines carefully prepared meals, fresh ingredients and
+        friendly service to make every visit special.
+      </p>
+      <div class="features">
+        <div><span>✦</span><p><b>Fresh Ingredients</b><small>Quality ingredients in every meal.</small></p></div>
+        <div><span>♡</span><p><b>Made with Care</b><small>Prepared to delight every guest.</small></p></div>
+        <div><span>★</span><p><b>Warm Hospitality</b><small>A welcoming place to enjoy good food.</small></p></div>
+        <div><span>♨</span><p><b>Variety of Dishes</b><small>Meals for different tastes and occasions.</small></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu-section section" id="menu">
+    <div class="section-heading">
+      <span class="eyebrow">TASTE THE DIFFERENCE</span>
+      <h2>Our Popular <span>Dishes</span></h2>
+      <p>Explore a selection of delicious meals from our kitchen.</p>
+    </div>
+
+    <div class="menu-filters">
+      <button class="filter active" data-category="all">All Dishes</button>
+      <button class="filter" data-category="rice">Rice</button>
+      <button class="filter" data-category="grill">Grills</button>
+      <button class="filter" data-category="soup">Soups</button>
+    </div>
+
+    <div class="dish-grid">
+      <article class="dish-card" data-category="rice">
+        <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=700&q=85" alt="Rice dish with vegetables" loading="lazy">
+        <div class="dish-info">
+          <div class="dish-title"><h3>Special Fried Rice</h3><span>₦5,000</span></div>
+          <p>Flavourful rice with vegetables and spices.</p>
+          <button class="order-button" data-dish="Special Fried Rice">Order This Dish ↗</button>
+        </div>
+      </article>
+
+      <article class="dish-card" data-category="grill">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=85" alt="Grilled meat served on a plate" loading="lazy">
+        <div class="dish-info">
+          <div class="dish-title"><h3>Grilled Meat</h3><span>₦7,500</span></div>
+          <p>Seasoned grilled meat prepared with care.</p>
+          <button class="order-button" data-dish="Grilled Meat">Order This Dish ↗</button>
+        </div>
+      </article>
+
+      <article class="dish-card" data-category="rice">
+        <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=700&q=85" alt="Rice served with chicken" loading="lazy">
+        <div class="dish-info">
+          <div class="dish-title"><h3>Rice & Chicken</h3><span>₦6,500</span></div>
+          <p>A satisfying rice meal with tender chicken.</p>
+          <button class="order-button" data-dish="Rice and Chicken">Order This Dish ↗</button>
+        </div>
+      </article>
+
+      <article class="dish-card" data-category="soup">
+        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=85" alt="A warm bowl of soup" loading="lazy">
+        <div class="dish-info">
+          <div class="dish-title"><h3>Special Soup</h3><span>₦4,500</span></div>
+          <p>A comforting bowl of richly flavoured soup.</p>
+          <button class="order-button" data-dish="Special Soup">Order This Dish ↗</button>
+        </div>
+      </article>
+
+      <article class="dish-card" data-category="grill">
+        <img src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=700&q=85" alt="Steak and grilled food" loading="lazy">
+        <div class="dish-info">
+          <div class="dish-title"><h3>Chef's Special Grill</h3><span>₦8,000</span></div>
+          <p>A delicious grilled option for meat lovers.</p>
+          <button class="order-button" data-dish="Chef's Special Grill">Order This Dish ↗</button>
+        </div>
+      </article>
+
+      <article class="dish-card" data-category="rice">
+        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=85" alt="Fresh salad bowl" loading="lazy">
+        <div class="dish-info">
+          <div class="dish-title"><h3>Fresh Garden Salad</h3><span>₦3,500</span></div>
+          <p>A refreshing mix of fresh vegetables.</p>
+          <button class="order-button" data-dish="Fresh Garden Salad">Order This Dish ↗</button>
+        </div>
+      </article>
+    </div>
+
+    <p class="menu-note">Sample menu and prices — update these to match your restaurant.</p>
+  </section>
+
+  <section class="special-banner">
+    <div>
+      <span class="eyebrow">A LITTLE SOMETHING SPECIAL</span>
+      <h2>Good food tastes even better when shared.</h2>
+      <p>Bring your friends and family together over a delicious meal.</p>
+    </div>
+    <a href="#contact" class="button gold-button">Plan Your Visit ↗</a>
+  </section>
+
+  <section class="gallery section" id="gallery">
+    <div class="section-heading">
+      <span class="eyebrow">A FEAST FOR THE EYES</span>
+      <h2>Our <span>Gallery</span></h2>
+      <p>Explore the flavours and atmosphere of Flavor Haven.</p>
+    </div>
+
+    <div class="gallery-grid">
+      <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=85" alt="Freshly prepared meal" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=85" alt="Grilled food" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=700&q=85" alt="Restaurant interior" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=85" alt="Fresh salad" loading="lazy">
+    </div>
+  </section>
+
+  <section class="reviews section" id="reviews">
+    <div class="section-heading">
+      <span class="eyebrow">GUEST EXPERIENCES</span>
+      <h2>What People <span>Say</span></h2>
+      <p>Replace these sample reviews with real customer feedback.</p>
+    </div>
+
+    <div class="review-grid">
+      <article class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>“A lovely place to enjoy a meal with family. The atmosphere feels welcoming.”</p>
+        <h3>Restaurant Guest</h3>
+      </article>
+      <article class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>“The menu offers a nice variety, and the presentation is wonderful.”</p>
+        <h3>Restaurant Guest</h3>
+      </article>
+      <article class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>“A comfortable spot for catching up with friends over good food.”</p>
+        <h3>Restaurant Guest</h3>
+      </article>
+    </div>
+  </section>
+
+  <section class="contact section" id="contact">
+    <div>
+      <span class="eyebrow">COME DINE WITH US</span>
+      <h2>Your Table Is <span>Waiting.</span></h2>
+      <p>Want to make an order or ask about a reservation? Send us a message on WhatsApp.</p>
+      <p class="contact-detail"><b>Restaurant:</b> Flavor Haven Restaurant & Grill</p>
+      <p class="contact-detail"><b>Opening hours:</b> Add your actual business hours here.</p>
+      <p class="contact-detail"><b>Location:</b> Add your restaurant address here.</p>
+      <a class="button gold-button"
+         href="https://wa.me/?text=Hello%20Flavor%20Haven%2C%20I%20would%20like%20to%20make%20an%20enquiry."
+         target="_blank" rel="noopener">Contact on WhatsApp ↗</a>
+    </div>
+
+    <div class="contact-image">
+      <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=85"
+           alt="Elegant restaurant interior" loading="lazy">
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <a href="#home" class="logo">✦ Flavor <span>Haven</span>
+    <small>RESTAURANT & GRILL</small>
+  </a>
+  <p>Good Food • Great Mood</p>
+  <div class="footer-links">
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <p class="copyright">© <span id="year"></span> Flavor Haven. Update this template with your restaurant details.</p>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/?text=Hello%20Flavor%20Haven"
+   target="_blank" rel="noopener" aria-label="Contact on WhatsApp">☏</a>
+
+<script src="script.js"></script>
+</body>
+</html>
